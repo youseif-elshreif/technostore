@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Tecnostore</title>
+    <title>Techno Store</title>
 
     <!-- Fonts -->
     <link
@@ -19,6 +19,12 @@
     <link rel="stylesheet" href="css/all.min.css" />
     <link rel="stylesheet" href="css/normaliz.css" />
     <link rel="stylesheet" href="css/style.css" />
+    <!-- <script type="module" src="js/all/dark-mode-loading.js"></script> -->
+    <script>
+      if (localStorage.getItem("mode") === "true") {
+        document.documentElement.classList.add("dark-mode");
+      }
+    </script>
   </head>
   <body>
     <div class="cart-list darged-list">
@@ -26,8 +32,8 @@
       <div class="cart-products"></div>
       <div class="cart-list-foot">
         <span class="total-count"></span>
-        <span class="total-price"></span>
-        <a href="#"><h3>Buy Now</h3></a>
+        <span class="total-price">Totla Price : 0</span>
+        <a href="check-out.html"><h3 class="btn">Check out</h3></a>
       </div>
     </div>
 
@@ -36,16 +42,16 @@
     </div>
 
     <div class="nav">
+      <ul class="draged">
+        <li class="active"><a class="active" href="#">Home</a></li>
+        <div class="categories"></div>
+        <li><a href="#contact">contact</a></li>
+      </ul>
       <div class="container">
         <a class="logo" href="#">
           <i class="fa-solid fa-microchip"></i>
           <span>TECHNO STORE</span>
         </a>
-        <ul class="draged">
-          <li class="active"><a class="active" href="#">Home</a></li>
-          <div class="categories"></div>
-          <li><a href="#contact">contact</a></li>
-        </ul>
         <div>
           <div class="list">
             <span></span>
@@ -76,19 +82,19 @@
         <div class="ads-swiper">
           <div class="swiper-wrapper">
             <div class="swiper-slide">
-              <img src="img/banner_box1.jpg" loading="lazy" alt="" />
+              <img src="img/banner_box1.jpg" alt="" />
             </div>
             <div class="swiper-slide">
-              <img src="img/banner_box2.jpg" loading="lazy" alt="" />
+              <img src="img/banner_box2.jpg" alt="" />
             </div>
             <div class="swiper-slide">
-              <img src="img/banner_box3.jpg" loading="lazy" alt="" />
+              <img src="img/banner_box3.jpg" alt="" />
             </div>
             <div class="swiper-slide">
-              <img src="img/banner_box4.jpg" loading="lazy" alt="" />
+              <img src="img/banner_box4.jpg" alt="" />
             </div>
             <div class="swiper-slide">
-              <img src="img/banner_box5.jpg" loading="lazy" alt="" />
+              <img src="img/banner_box5.jpg" alt="" />
             </div>
           </div>
           <div class="swiper-pagination"></div>
@@ -150,6 +156,10 @@
     </div>
     <div class="foot">Developed by Youseif Elshreif &copy; 2025</div>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-    <script src="js/main.js"></script>
+    <script type="module" src="js/all/data.js"></script>
+    <script type="module" src="js/scroll.js"></script>
+    <script type="module" src="js/all/events.js"></script>
+    <script type="module" src="js/swipers.js"></script>
+    <script type="module" src="js/main.js"></script>
   </body>
 </html>

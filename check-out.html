@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Techno Store</title>
+
+    <!-- Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- swiper-style -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+
+    <!-- Leaflet CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+
+    <!-- Leaflet JS -->
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+    <!-- style -->
+    <link rel="stylesheet" href="css/all.min.css" />
+    <link rel="stylesheet" href="css/normaliz.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <!-- <script type="module" src="js/all/dark-mode-loading.js"></script> -->
+    <script>
+      if (localStorage.getItem("mode") === "true") {
+        document.documentElement.classList.add("dark-mode");
+      }
+    </script>
+  </head>
+  <body>
+    <div class="fav-list darged-list">
+      <h2>Added to fav</h2>
+    </div>
+
+    <div class="nav">
+      <ul class="draged">
+        <li class="active"><a class="active" href="#">Home</a></li>
+        <div class="categories"></div>
+        <li><a href="#contact">contact</a></li>
+      </ul>
+      <div class="container">
+        <a class="logo" href="#">
+          <i class="fa-solid fa-microchip"></i>
+          <span>TECHNO STORE</span>
+        </a>
+        <div>
+          <div class="list">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+          <i class="fa-solid fa-magnifying-glass"></i>
+          <i class="fa-solid fa-circle-half-stroke dark"></i>
+          <div class="fav">
+            <div class="count">0</div>
+            <i class="fa-solid fa-heart"></i>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="check-out">
+      <div class="container">
+        <div class="order-list">
+          <h2>Your Order</h2>
+          <div class="cart-products"></div>
+        </div>
+        <div>
+          <div class="form">
+            <form
+              id="check"
+              method="POST"
+              action="https://script.google.com/macros/s/AKfycbzaX9CyEZfo8ecj13KhsjRm__4PaHA1GkFPVmPW4rndeav4CJP17LpedHAONR1CgCdJ/exec"
+            >
+              <div>
+                <label for="name">Name</label>
+                <input
+                  class="data"
+                  id="name"
+                  type="text"
+                  name="Name"
+                  data-status="false"
+                />
+                <span class="alert name"
+                  >Please write at least first and last name</span
+                >
+              </div>
+
+              <div>
+                <label for="phone">Phone</label>
+                <input
+                  class="data"
+                  id="phone"
+                  type="tel"
+                  name="Phone"
+                  data-status="false"
+                />
+                <span class="alert phone">Please write 11 numbers</span>
+              </div>
+
+              <div>
+                <label for="address">Address</label>
+                <input
+                  class="data"
+                  id="address"
+                  type="text"
+                  name="Address"
+                  data-status="false"
+                />
+                <span class="alert address">Please write your address</span>
+              </div>
+
+              <input
+                class="data"
+                type="text"
+                name="Products"
+                id="products"
+                data-status="false"
+                hidden
+              />
+              <input
+                class="data"
+                type="text"
+                name="Price"
+                id="price"
+                data-status="false"
+                hidden
+              />
+
+              <div class="map" id="map"></div>
+              <input class="btn" type="submit" value="Check Out" />
+            </form>
+          </div>
+          <div class="totals">
+            <span class="total-count">Total Products: 0 </span>
+            <span class="total-price">Totla Price: 0 L.E </span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="foot">
+      Developed by Youseif Elshreif <span>&copy;</span> 2025
+    </div>
+    <script type="module" src="js/main.js"></script>
+    <script type="module" src="js/all/cart.js"></script>
+    <script type="module" src="js/checkOut/check-out-form-events.js"></script>
+    <script type="module" src="js/checkOut/map.js"></script>
+    <script type="module" src="js/checkOut/postData.js"></script>
+    <script type="module" src="js/all/fav.js"></script>
+  </body>
+</html>

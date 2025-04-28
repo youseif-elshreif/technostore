@@ -1,0 +1,104 @@
+let favList = document.querySelector(".fav-list");
+let favArr = [];
+
+function addToFavOnClick(data) {
+  let addToFavBtn = document.querySelectorAll(".add-to-fav");
+  addToFavBtn.forEach((e) => {
+    e.addEventListener("click", (e) => {
+      let favDiv = e.target.closest(".add-to-fav");
+      let proCard = favDiv.closest(".swiper-slide");
+      if (!favDiv.classList.contains("faved")) {
+        addToFav(proCard.id, data);
+        addfavToLocal(proCard.id);
+        favDiv.classList.add("faved");
+      } else {
+        delFromFav(proCard.id);
+        favDiv.classList.remove("faved");
+      }
+    });
+  });
+  favCheck();
+}
+
+function addToFav(ref, data) {
+  const favItem = document.createElement("div");
+  favItem.className = "fav listed";
+  favItem.dataset.id = data[ref].id;
+
+  const img = document.createElement("img");
+  img.src = data[ref].img;
+  img.loading = "lazy";
+  img.alt = "";
+
+  const textDiv = document.createElement("div");
+  textDiv.className = "text";
+
+  const title = document.createElement("h3");
+  title.textContent = data[ref].title;
+
+  const del = document.createElement("span");
+  del.className = "del-from-fav";
+  del.textContent = "Delet";
+
+  textDiv.append(title, del);
+  favItem.append(img, textDiv);
+
+  favList.appendChild(favItem);
+  favCoun();
+
+  del.addEventListener("click", () => {
+    delFromFav(del.closest(".listed").dataset.id);
+  });
+}
+
+function addfavToLocal(e) {
+  favArr = localStorage.favedData ? JSON.parse(localStorage.favedData) : [];
+
+  favArr.push(e);
+
+  localStorage.favedData = JSON.stringify([...new Set(favArr)]);
+}
+
+function favCheck() {
+  let addToFavBtn = document.querySelectorAll(".add-to-fav");
+  addToFavBtn.forEach((e) => {
+    if (localStorage.favedData) {
+      [...JSON.parse(localStorage.favedData)].forEach((a) => {
+        if (e.closest(".swiper-slide").id == a) {
+          e.classList.add("faved");
+        }
+      });
+    }
+  });
+}
+
+function delFromFav(e) {
+  let faved = Array.from(document.querySelectorAll(".fav.listed"));
+  let favedCard = Array.from(document.querySelectorAll(".swiper-slide.added"));
+
+  let index = faved.findIndex((a) => a.dataset.id == e);
+  let index2 = favedCard.findIndex((a) => a.id == e);
+
+  if (index != -1) {
+    faved[index].remove();
+  }
+
+  if (index2 != -1) {
+    favedCard[index2].querySelector(".faved").classList.remove("faved");
+  }
+
+  let arr = JSON.parse(localStorage.favedData);
+  arr.splice(index, 1);
+
+  localStorage.favedData = JSON.stringify(arr);
+  favCoun();
+}
+
+function favCoun() {
+  document.querySelectorAll(".fav.listed").length <= 99
+    ? (document.querySelector(".fav .count").innerHTML =
+        document.querySelectorAll(".fav.listed").length)
+    : (document.querySelector(".fav .count").innerHTML = "99+");
+}
+
+export { addToFavOnClick, addToFav };

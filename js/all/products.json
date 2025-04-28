@@ -1,0 +1,366 @@
+[
+  {
+    "id": 0,
+    "img": "img/product/0.png",
+    "name": "Samsung 55 Inch UHD 4K Smart TV With Receiver",
+    "Company": "TV",
+    "price": 350,
+    "category": "electronics",
+    "details": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit ipsam ipsa tempora molestiae obcaecati, tenetur voluptatem dolore debitis expedita, temporibus qui consequatur. Doloribus veniam et tenetur veritatis accusamus placeat ut adipisci officia. Dolores totam, adipisci mollitia cumque alias quos earum placeat doloribus tempore culpa perspiciatis reiciendis assumenda cupiditate nam eum minus a optio amet error. Mollitia vel blanditiis distinctio facilis?",
+    "title": "Samsung 55 Inch UHD 4K Smart TV"
+  },
+  {
+    "id": 1,
+    "img": "img/product/1.png",
+    "name": "Redmi 13C Dual SIM with 6GB RAM",
+    "Company": "Redmi",
+    "price": 280,
+    "category": "mobiles",
+    "details": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit ipsam ipsa tempora molestiae obcaecati, tenetur voluptatem dolore debitis expedita, temporibus qui consequatur. Doloribus veniam et tenetur veritatis accusamus placeat ut adipisci officia. Dolores totam, adipisci mollitia cumque alias quos earum placeat doloribus tempore culpa perspiciatis reiciendis assumenda cupiditate nam eum minus a optio amet error. Mollitia vel blanditiis distinctio facilis?",
+    "title": "Redmi 13C Dual SIM - 6GB RAM"
+  },
+  {
+    "id": 2,
+    "img": "img/product/2.png",
+    "name": "Dell Laptop Latitude 5530 Core i7-1255U 8GB SSD",
+    "Company": "laptop",
+    "price": 400,
+    "category": "electronics",
+    "details": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit ipsam ipsa tempora molestiae obcaecati, tenetur voluptatem dolore debitis expedita, temporibus qui consequatur. Doloribus veniam et tenetur veritatis accusamus placeat ut adipisci officia. Dolores totam, adipisci mollitia cumque alias quos earum placeat doloribus tempore culpa perspiciatis reiciendis assumenda cupiditate nam eum minus a optio amet error. Mollitia vel blanditiis distinctio facilis?",
+    "title": "Dell Latitude 5530 Laptop - Core i7"
+  },
+  {
+    "id": 3,
+    "img": "img/product/3.png",
+    "name": "Canon EOS RP Mirrorless Camera",
+    "Company": "Camera",
+    "price": 530,
+    "category": "electronics",
+    "details": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit ipsam ipsa tempora molestiae obcaecati, tenetur voluptatem dolore debitis expedita, temporibus qui consequatur. Doloribus veniam et tenetur veritatis accusamus placeat ut adipisci officia. Dolores totam, adipisci mollitia cumque alias quos earum placeat doloribus tempore culpa perspiciatis reiciendis assumenda cupiditate nam eum minus a optio amet error. Mollitia vel blanditiis distinctio facilis?",
+    "title": "Canon EOS RP Mirrorless Camera"
+  },
+  {
+    "id": 4,
+    "img": "img/product/4.png",
+    "name": "OPPO A18 128GB 4GB Glowing Black",
+    "price": 250,
+    "old_price": 280,
+    "category": "mobiles",
+    "details": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit ipsam ipsa tempora molestiae obcaecati, tenetur voluptatem dolore debitis expedita, temporibus qui consequatur. Doloribus veniam et tenetur veritatis accusamus placeat ut adipisci officia. Dolores totam, adipisci mollitia cumque alias quos earum placeat doloribus tempore culpa perspiciatis reiciendis assumenda cupiditate nam eum minus a optio amet error. Mollitia vel blanditiis distinctio facilis?",
+    "title": "OPPO A18 - 128GB Storage, 4GB RAM"
+  },
+  {
+    "id": 5,
+    "img": "img/product/5.png",
+    "name": "Samsung 27-Inch G55C Odyssey QHD 4k",
+    "Company": "Monitor",
+    "price": 280,
+    "category": "electronics",
+    "details": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit ipsam ipsa tempora molestiae obcaecati, tenetur voluptatem dolore debitis expedita, temporibus qui consequatur. Doloribus veniam et tenetur veritatis accusamus placeat ut adipisci officia. Dolores totam, adipisci mollitia cumque alias quos earum placeat doloribus tempore culpa perspiciatis reiciendis assumenda cupiditate nam eum minus a optio amet error. Mollitia vel blanditiis distinctio facilis?",
+    "title": "Samsung 27-Inch Odyssey QHD Monitor"
+  },
+  {
+    "id": 6,
+    "img": "img/product/6.png",
+    "name": "Iphone X",
+    "Company": "Iphone",
+    "price": 220,
+    "old_price": 310,
+    "category": "mobiles",
+    "details": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit ipsam ipsa tempora molestiae obcaecati, tenetur voluptatem dolore debitis expedita, temporibus qui consequatur. Doloribus veniam et tenetur veritatis accusamus placeat ut adipisci officia. Dolores totam, adipisci mollitia cumque alias quos earum placeat doloribus tempore culpa perspiciatis reiciendis assumenda cupiditate nam eum minus a optio amet error. Mollitia vel blanditiis distinctio facilis?",
+    "title": "Iphone X"
+  },
+  {
+    "id": 7,
+    "img": "img/product/7.png",
+    "name": "HP Victus Gaming Laptop 8RAM SSD",
+    "Company": "Laptop",
+    "price": 370,
+    "old_price": 420,
+    "category": "electronics",
+    "details": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit ipsam ipsa tempora molestiae obcaecati, tenetur voluptatem dolore debitis expedita, temporibus qui consequatur. Doloribus veniam et tenetur veritatis accusamus placeat ut adipisci officia. Dolores totam, adipisci mollitia cumque alias quos earum placeat doloribus tempore culpa perspiciatis reiciendis assumenda cupiditate nam eum minus a optio amet error. Mollitia vel blanditiis distinctio facilis?",
+    "title": "HP Victus Gaming Laptop - 8GB RAM"
+  },
+  {
+    "id": 8,
+    "img": "img/product/8.png",
+    "name": "Xiaomi Redmi 13C Dual SIM 8GB",
+    "Company": "Xiaomi",
+    "price": 320,
+    "category": "mobiles",
+    "details": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit ipsam ipsa tempora molestiae obcaecati, tenetur voluptatem dolore debitis expedita, temporibus qui consequatur. Doloribus veniam et tenetur veritatis accusamus placeat ut adipisci officia. Dolores totam, adipisci mollitia cumque alias quos earum placeat doloribus tempore culpa perspiciatis reiciendis assumenda cupiditate nam eum minus a optio amet error. Mollitia vel blanditiis distinctio facilis?",
+    "title": "Xiaomi Redmi 13C - 8GB Dual SIM"
+  },
+  {
+    "id": 9,
+    "img": "img/product/9.png",
+    "name": "Handheld Barcode Scanner 1D/2D/QR Code",
+    "Company": "Scanners",
+    "price": 80,
+    "old_price": 100,
+    "category": "electronics",
+    "details": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit ipsam ipsa tempora molestiae obcaecati, tenetur voluptatem dolore debitis expedita, temporibus qui consequatur. Doloribus veniam et tenetur veritatis accusamus placeat ut adipisci officia. Dolores totam, adipisci mollitia cumque alias quos earum placeat doloribus tempore culpa perspiciatis reiciendis assumenda cupiditate nam eum minus a optio amet error. Mollitia vel blanditiis distinctio facilis?",
+    "title": "Handheld Barcode Scanner - 1D/2D/QR"
+  },
+  {
+    "id": 10,
+    "img": "img/product/10.png",
+    "name": "Large Venue building mapping Projector",
+    "Company": "Projector",
+    "price": 300,
+    "category": "electronics",
+    "details": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit ipsam ipsa tempora molestiae obcaecati, tenetur voluptatem dolore debitis expedita, temporibus qui consequatur. Doloribus veniam et tenetur veritatis accusamus placeat ut adipisci officia. Dolores totam, adipisci mollitia cumque alias quos earum placeat doloribus tempore culpa perspiciatis reiciendis assumenda cupiditate nam eum minus a optio amet error. Mollitia vel blanditiis distinctio facilis?",
+    "title": "Large Venue Mapping Projector"
+  },
+  {
+    "id": 11,
+    "img": "img/product/11.png",
+    "name": "Infinix Hot 40i (RAM: 4+4GB, 128GB)",
+    "Company": "Infinix",
+    "price": 260,
+    "old_price": 380,
+    "category": "mobiles",
+    "details": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit ipsam ipsa tempora molestiae obcaecati, tenetur voluptatem dolore debitis expedita, temporibus qui consequatur. Doloribus veniam et tenetur veritatis accusamus placeat ut adipisci officia. Dolores totam, adipisci mollitia cumque alias quos earum placeat doloribus tempore culpa perspiciatis reiciendis assumenda cupiditate nam eum minus a optio amet error. Mollitia vel blanditiis distinctio facilis?",
+    "title": "Infinix Hot 40i - 4+4GB RAM, 128GB Storage"
+  },
+  {
+    "id": 12,
+    "img": "img/product/12.png",
+    "name": "HP DeskJet 2710 Printer, All-in-One",
+    "Company": "DeskJet",
+    "price": 370,
+    "category": "electronics",
+    "details": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit ipsam ipsa tempora molestiae obcaecati, tenetur voluptatem dolore debitis expedita, temporibus qui consequatur. Doloribus veniam et tenetur veritatis accusamus placeat ut adipisci officia. Dolores totam, adipisci mollitia cumque alias quos earum placeat doloribus tempore culpa perspiciatis reiciendis assumenda cupiditate nam eum minus a optio amet error. Mollitia vel blanditiis distinctio facilis?",
+    "title": "HP DeskJet 2710 - All-in-One Printer"
+  },
+  {
+    "id": 13,
+    "img": "img/product/13.png",
+    "name": "Fuzzy Logic Rice Cooker DIGITAL-JAR 1.8L 940W – HD4515/67",
+    "Company": "Fuzzy",
+    "price": 490,
+    "category": "appliances",
+    "details": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit ipsam ipsa tempora molestiae obcaecati, tenetur voluptatem dolore debitis expedita, temporibus qui consequatur. Doloribus veniam et tenetur veritatis accusamus placeat ut adipisci officia. Dolores totam, adipisci mollitia cumque alias quos earum placeat doloribus tempore culpa perspiciatis reiciendis assumenda cupiditate nam eum minus a optio amet error. Mollitia vel blanditiis distinctio facilis?",
+    "title": "Fuzzy Logic Rice Cooker - 1.8L"
+  },
+  {
+    "id": 14,
+    "img": "img/product/14.png",
+    "name": "Sencor STS 5070SS Electric Toaster for Four Slices",
+    "Company": "STS 5070SS",
+    "price": 340,
+    "category": "appliances",
+    "details": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit ipsam ipsa tempora molestiae obcaecati, tenetur voluptatem dolore debitis expedita, temporibus qui consequatur. Doloribus veniam et tenetur veritatis accusamus placeat ut adipisci officia. Dolores totam, adipisci mollitia cumque alias quos earum placeat doloribus tempore culpa perspiciatis reiciendis assumenda cupiditate nam eum minus a optio amet error. Mollitia vel blanditiis distinctio facilis?",
+    "title": "Sencor STS 5070SS - Electric Toaster"
+  },
+  {
+    "id": 15,
+    "img": "img/product/15.png",
+    "name": "Infinix Smart 6 Plus (Miracle Black)",
+    "Company": "Infinix",
+    "price": 240,
+    "old_price": 290,
+    "category": "mobiles",
+    "details": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit ipsam ipsa tempora molestiae obcaecati, tenetur voluptatem dolore debitis expedita, temporibus qui consequatur. Doloribus veniam et tenetur veritatis accusamus placeat ut adipisci officia. Dolores totam, adipisci mollitia cumque alias quos earum placeat doloribus tempore culpa perspiciatis reiciendis assumenda cupiditate nam eum minus a optio amet error. Mollitia vel blanditiis distinctio facilis?",
+    "title": "Infinix Smart 6 Plus - Miracle Black"
+  },
+  {
+    "id": 16,
+    "img": "img/product/16.png",
+    "name": "Washing Machine 959 Series 8kg Senator Aqua SX, Silver",
+    "Company": "Aqua SX",
+    "price": 600,
+    "old_price": 700,
+    "category": "appliances",
+    "details": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit ipsam ipsa tempora molestiae obcaecati, tenetur voluptatem dolore debitis expedita, temporibus qui consequatur. Doloribus veniam et tenetur veritatis accusamus placeat ut adipisci officia. Dolores totam, adipisci mollitia cumque alias quos earum placeat doloribus tempore culpa perspiciatis reiciendis assumenda cupiditate nam eum minus a optio amet error. Mollitia vel blanditiis distinctio facilis?",
+    "title": "Aqua SX Washing Machine 8kg"
+  },
+  {
+    "id": 17,
+    "img": "img/product/17.png",
+    "name": "HIKVISION PTZ Camera 4K Outdoor",
+    "Company": "Camera",
+    "price": 185,
+    "category": "electronics",
+    "details": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit ipsam ipsa tempora molestiae obcaecati, tenetur voluptatem dolore debitis expedita, temporibus qui consequatur. Doloribus veniam et tenetur veritatis accusamus placeat ut adipisci officia. Dolores totam, adipisci mollitia cumque alias quos earum placeat doloribus tempore culpa perspiciatis reiciendis assumenda cupiditate nam eum minus a optio amet error. Mollitia vel blanditiis distinctio facilis?",
+    "title": "HIKVISION PTZ 4K Outdoor Camera"
+  },
+  {
+    "id": 18,
+    "img": "img/product/18.png",
+    "name": "OPPO Reno11 5G 256GB 12GB",
+    "Company": "OPPO",
+    "price": 225,
+    "old_price": 600,
+    "category": "mobiles",
+    "details": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit ipsam ipsa tempora molestiae obcaecati, tenetur voluptatem dolore debitis expedita, temporibus qui consequatur. Doloribus veniam et tenetur veritatis accusamus placeat ut adipisci officia. Dolores totam, adipisci mollitia cumque alias quos earum placeat doloribus tempore culpa perspiciatis reiciendis assumenda cupiditate nam eum minus a optio amet error. Mollitia vel blanditiis distinctio facilis?",
+    "title": "OPPO Reno11 5G - 256GB, 12GB RAM"
+  },
+  {
+    "id": 19,
+    "img": "img/product/19.png",
+    "name": "VIVAX kettle WH-175L with a capacity of 1.7",
+    "Company": "kettle",
+    "price": 140,
+    "category": "appliances",
+    "details": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit ipsam ipsa tempora molestiae obcaecati, tenetur voluptatem dolore debitis expedita, temporibus qui consequatur. Doloribus veniam et tenetur veritatis accusamus placeat ut adipisci officia. Dolores totam, adipisci mollitia cumque alias quos earum placeat doloribus tempore culpa perspiciatis reiciendis assumenda cupiditate nam eum minus a optio amet error. Mollitia vel blanditiis distinctio facilis?",
+    "title": "VIVAX Kettle - 1.7L Capacity"
+  },
+  {
+    "id": 20,
+    "img": "img/product/20.png",
+    "name": "Kenstar Ester ABS Plastic 750W Mixer Grinder",
+    "Company": "Kenstar",
+    "price": 280,
+    "old_price": 330,
+    "category": "appliances",
+    "details": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit ipsam ipsa tempora molestiae obcaecati, tenetur voluptatem dolore debitis expedita, temporibus qui consequatur. Doloribus veniam et tenetur veritatis accusamus placeat ut adipisci officia. Dolores totam, adipisci mollitia cumque alias quos earum placeat doloribus tempore culpa perspiciatis reiciendis assumenda cupiditate nam eum minus a optio amet error. Mollitia vel blanditiis distinctio facilis?",
+    "title": "Kenstar Ester 750W Mixer Grinder"
+  },
+  {
+    "id": 21,
+    "img": "img/product/21.png",
+    "name": "Multifunctional Food Processor",
+    "Company": "SharMultifunctionalp",
+    "price": 350,
+    "category": "appliances",
+    "details": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit ipsam ipsa tempora molestiae obcaecati, tenetur voluptatem dolore debitis expedita, temporibus qui consequatur. Doloribus veniam et tenetur veritatis accusamus placeat ut adipisci officia. Dolores totam, adipisci mollitia cumque alias quos earum placeat doloribus tempore culpa perspiciatis reiciendis assumenda cupiditate nam eum minus a optio amet error. Mollitia vel blanditiis distinctio facilis?",
+    "title": "Multifunctional Food Processor"
+  },
+  {
+    "id": 22,
+    "img": "img/product/22.png",
+    "name": "Zanussi Washing Machine 8 Kg 1200 RPM",
+    "Company": "Zanussi",
+    "price": 580,
+    "category": "appliances",
+    "details": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit ipsam ipsa tempora molestiae obcaecati, tenetur voluptatem dolore debitis expedita, temporibus qui consequatur. Doloribus veniam et tenetur veritatis accusamus placeat ut adipisci officia. Dolores totam, adipisci mollitia cumque alias quos earum placeat doloribus tempore culpa perspiciatis reiciendis assumenda cupiditate nam eum minus a optio amet error. Mollitia vel blanditiis distinctio facilis?",
+    "title": "Zanussi 8kg Washing Machine - 1200 RPM"
+  },
+  {
+    "id": 23,
+    "img": "img/product/23.png",
+    "name": "Sharp 42 Lt Electronic Oven Convection",
+    "Company": "Sharp",
+    "price": 400,
+    "category": "appliances",
+    "details": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit ipsam ipsa tempora molestiae obcaecati, tenetur voluptatem dolore debitis expedita, temporibus qui consequatur. Doloribus veniam et tenetur veritatis accusamus placeat ut adipisci officia. Dolores totam, adipisci mollitia cumque alias quos earum placeat doloribus tempore culpa perspiciatis reiciendis assumenda cupiditate nam eum minus a optio amet error. Mollitia vel blanditiis distinctio facilis?",
+    "title": "Sharp 42L Convection Electronic Oven"
+  },
+  {
+    "id": 24,
+    "img": "img/product/24.png",
+    "name": "Lenovo Monitor Legion R27fc-30 Gaming Curved",
+    "Company": "Monitor",
+    "price": 300,
+    "old_price": 380,
+    "category": "electronics",
+    "details": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit ipsam ipsa tempora molestiae obcaecati, tenetur voluptatem dolore debitis expedita, temporibus qui consequatur. Doloribus veniam et tenetur veritatis accusamus placeat ut adipisci officia. Dolores totam, adipisci mollitia cumque alias quos earum placeat doloribus tempore culpa perspiciatis reiciendis assumenda cupiditate nam eum minus a optio amet error. Mollitia vel blanditiis distinctio facilis?",
+    "title": "Lenovo Legion Curved Gaming Monitor"
+  },
+  {
+    "id": 25,
+    "img": "img/product/25.png",
+    "name": "Iphone 15",
+    "Company": "Iphone",
+    "price": 580,
+    "old_price": 900,
+    "category": "mobiles",
+    "details": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit ipsam ipsa tempora molestiae obcaecati, tenetur voluptatem dolore debitis expedita, temporibus qui consequatur. Doloribus veniam et tenetur veritatis accusamus placeat ut adipisci officia. Dolores totam, adipisci mollitia cumque alias quos earum placeat doloribus tempore culpa perspiciatis reiciendis assumenda cupiditate nam eum minus a optio amet error. Mollitia vel blanditiis distinctio facilis?",
+    "title": "Iphone 15 - Latest Model"
+  },
+  {
+    "id": 26,
+    "img": "img/product/26.png",
+    "name": "Samsung Galaxy S23 FE",
+    "Company": "Samsung",
+    "price": 400,
+    "old_price": 450,
+    "category": "mobiles",
+    "details": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit ipsam ipsa tempora molestiae obcaecati, tenetur voluptatem dolore debitis expedita, temporibus qui consequatur. Doloribus veniam et tenetur veritatis accusamus placeat ut adipisci officia. Dolores totam, adipisci mollitia cumque alias quos earum placeat doloribus tempore culpa perspiciatis reiciendis assumenda cupiditate nam eum minus a optio amet error. Mollitia vel blanditiis distinctio facilis?",
+    "title": "Samsung Galaxy S23 FE - 5G"
+  },
+  {
+    "id": 27,
+    "img": "img/product/27.png",
+    "name": "Iphone 7",
+    "Company": "Iphone",
+    "price": 250,
+    "category": "mobiles",
+    "details": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit ipsam ipsa tempora molestiae obcaecati, tenetur voluptatem dolore debitis expedita, temporibus qui consequatur. Doloribus veniam et tenetur veritatis accusamus placeat ut adipisci officia. Dolores totam, adipisci mollitia cumque alias quos earum placeat doloribus tempore culpa perspiciatis reiciendis assumenda cupiditate nam eum minus a optio amet error. Mollitia vel blanditiis distinctio facilis?",
+    "title": "Iphone 7 - Budget Smartphone"
+  },
+  {
+    "id": 28,
+    "img": "img/product/28.png",
+    "name": "Iphone 11",
+    "Company": "Iphone",
+    "price": 480,
+    "category": "mobiles",
+    "details": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit ipsam ipsa tempora molestiae obcaecati, tenetur voluptatem dolore debitis expedita, temporibus qui consequatur. Doloribus veniam et tenetur veritatis accusamus placeat ut adipisci officia. Dolores totam, adipisci mollitia cumque alias quos earum placeat doloribus tempore culpa perspiciatis reiciendis assumenda cupiditate nam eum minus a optio amet error. Mollitia vel blanditiis distinctio facilis?",
+    "title": "Iphone 11 - Advanced Features"
+  },
+  {
+    "id": 29,
+    "img": "img/product/29.png",
+    "name": "Realme 12",
+    "Company": "Realme",
+    "price": 345,
+    "category": "mobiles",
+    "details": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit ipsam ipsa tempora molestiae obcaecati, tenetur voluptatem dolore debitis expedita, temporibus qui consequatur. Doloribus veniam et tenetur veritatis accusamus placeat ut adipisci officia. Dolores totam, adipisci mollitia cumque alias quos earum placeat doloribus tempore culpa perspiciatis reiciendis assumenda cupiditate nam eum minus a optio amet error. Mollitia vel blanditiis distinctio facilis?",
+    "title": "Realme 12 - Smart Mobile"
+  },
+  {
+    "id": 30,
+    "img": "img/product/30.png",
+    "name": "Realme 10",
+    "Company": "Realme",
+    "price": 320,
+    "old_price": 400,
+    "category": "mobiles",
+    "details": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit ipsam ipsa tempora molestiae obcaecati, tenetur voluptatem dolore debitis expedita, temporibus qui consequatur. Doloribus veniam et tenetur veritatis accusamus placeat ut adipisci officia. Dolores totam, adipisci mollitia cumque alias quos earum placeat doloribus tempore culpa perspiciatis reiciendis assumenda cupiditate nam eum minus a optio amet error. Mollitia vel blanditiis distinctio facilis?",
+    "title": "Realme 10 - Affordable Smartphone"
+  },
+  {
+    "id": 31,
+    "img": "img/product/31.png",
+    "name": "Samsung 60 Inch UHD 4K Smart TV With Receiver",
+    "Company": "TV",
+    "price": 400,
+    "old_price": 500,
+    "category": "electronics",
+    "details": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit ipsam ipsa tempora molestiae obcaecati, tenetur voluptatem dolore debitis expedita, temporibus qui consequatur. Doloribus veniam et tenetur veritatis accusamus placeat ut adipisci officia. Dolores totam, adipisci mollitia cumque alias quos earum placeat doloribus tempore culpa perspiciatis reiciendis assumenda cupiditate nam eum minus a optio amet error. Mollitia vel blanditiis distinctio facilis?",
+    "title": "Samsung 60 Inch UHD 4K Smart TV"
+  },
+  {
+    "id": 32,
+    "img": "img/product/32.png",
+    "name": "Samsung 32-Inch G55C Odyssey QHD 4k",
+    "Company": "Monitor",
+    "price": 340,
+    "category": "electronics",
+    "details": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit ipsam ipsa tempora molestiae obcaecati, tenetur voluptatem dolore debitis expedita, temporibus qui consequatur. Doloribus veniam et tenetur veritatis accusamus placeat ut adipisci officia. Dolores totam, adipisci mollitia cumque alias quos earum placeat doloribus tempore culpa perspiciatis reiciendis assumenda cupiditate nam eum minus a optio amet error. Mollitia vel blanditiis distinctio facilis?",
+    "title": "Samsung 32-Inch TV"
+  },
+  {
+    "id": 33,
+    "img": "img/product/33.png",
+    "name": "Canon EOS R8 Mirrorless Camera",
+    "Company": "Camera",
+    "price": 500,
+    "old_price": 550,
+    "category": "electronics",
+    "details": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit ipsam ipsa tempora molestiae obcaecati, tenetur voluptatem dolore debitis expedita, temporibus qui consequatur. Doloribus veniam et tenetur veritatis accusamus placeat ut adipisci officia. Dolores totam, adipisci mollitia cumque alias quos earum placeat doloribus tempore culpa perspiciatis reiciendis assumenda cupiditate nam eum minus a optio amet error. Mollitia vel blanditiis distinctio facilis?",
+    "title": "Canon EOS R8"
+  },
+  {
+    "id": 34,
+    "img": "img/product/34.png",
+    "name": "Honeywell Super Market Barcode Scanner",
+    "Company": "Scanners",
+    "price": 100,
+    "category": "electronics",
+    "details": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit ipsam ipsa tempora molestiae obcaecati, tenetur voluptatem dolore debitis expedita, temporibus qui consequatur. Doloribus veniam et tenetur veritatis accusamus placeat ut adipisci officia. Dolores totam, adipisci mollitia cumque alias quos earum placeat doloribus tempore culpa perspiciatis reiciendis assumenda cupiditate nam eum minus a optio amet error. Mollitia vel blanditiis distinctio facilis?",
+    "title": "Honeywell Super Market Barcode Scanner"
+  }
+]
