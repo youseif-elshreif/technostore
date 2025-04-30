@@ -7,6 +7,7 @@
   --red-btn: #d31414;
   --slider-btn-bgcolor: rgba(0, 0, 0, 0.2);
   --slider-btn-bgcolor-hover: rgba(0, 0, 0, 0.5);
+  --main-sha: 0 0 10px 5px #ffffff14, 0 0 10px 5px #0a66c247;
   --main-logo-sha: 0px 0px 5px #0a66c2a3;
   --text-sha: 0 0 15px #22283191;
   --sec-text-sha: 0 0 5px #22283191;
@@ -66,6 +67,7 @@
   -moz-transition: all var(--main-time);
   -ms-transition: all var(--main-time);
   -o-transition: all var(--main-time);
+  -webkit-tap-highlight-color: transparent;
 }
 
 html {
@@ -86,6 +88,11 @@ a {
   text-decoration: none;
   text-align: center;
   color: inherit;
+}
+
+button:focus,
+a:focus {
+  outline: none;
 }
 
 input {
@@ -151,11 +158,12 @@ input:-webkit-autofill {
   z-index: 400;
   padding: 15px 10px 60px 15px;
   margin-top: 55px;
-  box-shadow: 0 0 100px -10px var(--slider-btn-bgcolor);
   left: -300px;
+  height: calc(var(--real-vh, 1vh) * 100);
 }
 
 .open {
+  box-shadow: 0 0 100px -10px var(--slider-btn-bgcolor);
   left: 0;
   z-index: 450;
 }
@@ -720,7 +728,7 @@ input:-webkit-autofill {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  box-shadow: 0 0 10px 10px #ffffff14, 0 0 10px 10px #0a66c247;
+  box-shadow: var(--main-sha);
   border-radius: 10px;
   -webkit-border-radius: 10px;
   -moz-border-radius: 10px;
@@ -849,7 +857,7 @@ input:-webkit-autofill {
 .pro-swiper {
   padding: 15px;
   background-color: var(--sec-bgcolor);
-  box-shadow: 0 0 10px 10px #ffffff14, 0 0 10px 10px #0a66c247;
+  box-shadow: var(--main-sha);
   border: 20px solid var(--sec-logo-color);
   border-bottom: 60px solid var(--sec-logo-color);
   border-top: 60px solid var(--sec-logo-color);
