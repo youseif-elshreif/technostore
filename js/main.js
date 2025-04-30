@@ -97,6 +97,13 @@ document.addEventListener("click", (e) => {
 
 // functions
 
+function setRealHeight() {
+  let vh = window.innerHeight * 0.01;
+  document.documentElement.style.setProperty("--real-vh", `${vh}px`);
+}
+setRealHeight();
+window.addEventListener("resize", setRealHeight);
+
 function addCategoriesToDraged(categories) {
   const categoriesContainer = dragedList.querySelector(".categories");
 
