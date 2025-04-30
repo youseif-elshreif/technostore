@@ -339,7 +339,7 @@ input:-webkit-autofill {
   width: 100%;
   background-color: var(--header-color);
   padding: 15px 0;
-  top: -70px;
+  top: 0px;
   opacity: 0;
   animation: ads 0.5s ease-in forwards;
   -webkit-animation: ads 0.5s ease-in forwards;
