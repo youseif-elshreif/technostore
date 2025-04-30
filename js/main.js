@@ -54,7 +54,7 @@ document.addEventListener("DOMContentLoaded", async () => {
   addToFavOnClick(data);
   cartOpen();
   favOpen();
-  // darkMode();
+  darkMode();
   navList();
   pronums();
 });
