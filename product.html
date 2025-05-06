@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Techno Store</title>
+
+    <!-- Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- swiper-style -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+
+    <!-- Leaflet CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+
+    <!-- Leaflet JS -->
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+    <!-- style -->
+    <link rel="stylesheet" href="css/all.min.css" />
+    <link rel="stylesheet" href="css/normaliz.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <script>
+      if (localStorage.getItem("mode") === "true") {
+        document.documentElement.classList.add("dark-mode");
+      }
+    </script>
+  </head>
+  <body>
+    <div class="cart-list darged-list">
+      <h2>Added to cart</h2>
+      <div class="cart-products"></div>
+      <div class="cart-list-foot">
+        <span class="total-count"></span>
+        <span class="total-price">Totla Price : 0</span>
+        <a href="check-out.html"><h3 class="btn">Check out</h3></a>
+      </div>
+    </div>
+
+    <div class="fav-list darged-list">
+      <h2>Added to fav</h2>
+    </div>
+
+    <div class="nav">
+      <ul class="draged">
+        <li class="active"><a class="active" href="#">Home</a></li>
+        <div class="categories"></div>
+        <li><a href="#contact">contact</a></li>
+      </ul>
+      <div class="container">
+        <a class="logo" href="index.html">
+          <i class="fa-solid fa-microchip"></i>
+          <span>TECHNO STORE</span>
+        </a>
+        <div>
+          <div class="list">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+          <i class="fa-solid fa-magnifying-glass"></i>
+          <i class="fa-solid fa-circle-half-stroke dark"></i>
+          <div class="fav">
+            <div class="count">0</div>
+            <i class="fa-solid fa-heart"></i>
+          </div>
+          <div class="cart">
+            <div class="count">0</div>
+            <i class="fa-solid fa-cart-shopping"></i>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="products-details">
+      <div class="container added carted-card" id="">
+        <div class="pros" id="">
+          <div class="img">
+            <img src="" loading="lazy" alt="" />
+            <div class="zoom-box"></div>
+          </div>
+          <div class="text">
+            <h4></h4>
+            <p class="description"></p>
+            <div class="rate"></div>
+            <div>
+              <div class="price">
+                <span class="pricc"></span>
+                <span><del></del></span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="btns">
+          <div class="add-to-cart">
+            <div>
+              <div class="counter">
+                <div class="un-carted">
+                  <i class="fa-solid fa-slash"></i
+                  ><i class="fa-solid fa-cart-shopping"></i>
+                </div>
+                <span class="minus">-</span><span class="num">1</span
+                ><span class="plus">+</span>
+              </div>
+              <i class="fa-solid fa-cart-shopping"></i><span>Add to cart</span>
+            </div>
+          </div>
+          <div class="add-to-fav"><i class="fa-solid fa-heart"></i></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="foot">
+      Developed by Youseif Elshreif <span>&copy;</span> 2025
+    </div>
+    <script type="module" src="js/all/cart.js"></script>
+    <script type="module" src="js/all/cart.js"></script>
+    <script type="module" src="js/all/events.js"></script>
+    <script type="module" src="js/product/pros.js"></script>
+    <script type="module" src="js/product/pros-events.js"></script>
+    <script type="module" src="js/main.js"></script>
+  </body>
+</html>

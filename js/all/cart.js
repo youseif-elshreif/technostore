@@ -1,3 +1,6 @@
+import { noProducts } from "./no-products.js";
+import { prosClick } from "./events.js";
+
 let cartPro = document.querySelector(".cart-products");
 let countarr = [];
 
@@ -6,12 +9,13 @@ function cartCheck() {
   addToCartBtn.forEach((e) => {
     if (localStorage.getItem("cartedData")) {
       [...JSON.parse(localStorage.getItem("cartedData"))].forEach((a) => {
-        if (e.closest(".swiper-slide").id == a.productId) {
+        if (e.closest(".added").id == a.productId) {
           e.classList.add("carted");
         }
       });
     }
   });
+  noProducts();
 }
 
 function addToCartOnClick(data) {
@@ -20,7 +24,7 @@ function addToCartOnClick(data) {
     e.addEventListener("click", (e) => {
       if (!e.target.classList.contains("fa-slash")) {
         let cartDiv = e.target.closest(".add-to-cart");
-        let proCard = cartDiv.closest(".swiper-slide");
+        let proCard = cartDiv.closest(".added");
         if (!cartDiv.classList.contains("carted")) {
           addToCart(proCard.id, data);
           addProductCountToLocaol(proCard.id, proCard);
@@ -35,9 +39,9 @@ function addToCartOnClick(data) {
 
 function addToCart(ref, data) {
   const cartItem = document.createElement("div");
-  cartItem.className = "added listed";
+  cartItem.className = "added listed carted-card";
   cartItem.dataset.id = data[ref].id;
-
+  prosClick(cartItem);
   const img = document.createElement("img");
   img.src = data[ref].img;
   img.loading = "lazy";
@@ -75,6 +79,8 @@ function addToCart(ref, data) {
   cross.addEventListener("click", () => {
     delFromCart(cross.closest(".listed").dataset.id);
   });
+
+  noProducts();
 }
 
 function countPrice() {
@@ -113,7 +119,7 @@ function addProductCountToLocaol(e, card) {
 }
 
 function pronums() {
-  let cards = Array.from(document.querySelectorAll(".added"));
+  let cards = Array.from(document.querySelectorAll(".carted-card"));
   if (localStorage.cartedData) {
     JSON.parse(localStorage.cartedData).forEach((e) => {
       let productIndex = cards.findIndex(
@@ -133,7 +139,7 @@ function pronums() {
 
 function handleCounter(target, type) {
   let card = target.closest(".added");
-  let dataId = card?.dataset.id || target.closest(".swiper-slide")?.id;
+  let dataId = card?.dataset.id || target.closest(".added")?.id;
   let swiperCard = document.getElementById(`${dataId}`)?.querySelector(".num");
   let cartCard = document
     .querySelector(`[data-id="${dataId}"]`)
@@ -159,6 +165,7 @@ function handleCounter(target, type) {
   }
   countPopUpCart();
   countPrice();
+  noProducts();
 }
 
 function countPopUpCart() {
@@ -179,19 +186,13 @@ function countPopUpCart() {
 }
 
 function delFromCart(e) {
-  let creted = Array.from(document.querySelectorAll(".cart-products .listed"));
-  let cartedCard = Array.from(document.querySelectorAll(".swiper-slide.added"));
+  let cartedCard = Array.from(document.querySelectorAll(".carted-card"));
 
-  let index = creted.findIndex((a) => a.dataset.id == e);
   let index2 = cartedCard.findIndex((a) => a.id == e);
 
   if (index2 != -1) {
     cartedCard[index2].querySelector(".add-to-cart").classList.remove("carted");
     cartedCard[index2].querySelector(".num").innerHTML = 1;
-  }
-
-  if (index != -1) {
-    creted[index].remove();
   }
 
   let arr = JSON.parse(localStorage.cartedData || "[]");
@@ -202,6 +203,7 @@ function delFromCart(e) {
     localStorage.cartedData = JSON.stringify(arr);
   }
   countPopUpCart();
+  noProducts();
 }
 
 export {

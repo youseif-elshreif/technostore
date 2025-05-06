@@ -6,10 +6,32 @@ import {
   addToProductsInput,
 } from "./form-check.js";
 import { getAdress } from "./map.js";
-import { countPopUpCart, countPrice } from "./../all/cart.js";
+import { countPopUpCart } from "./../all/cart.js";
+
+export let nameInput = document.getElementById("name");
+export let nameW = document.getElementsByClassName("alert")[0];
+
+export let phoneInput = document.getElementById("phone");
+export let phonew = document.getElementsByClassName("alert")[1];
+
+export let addressInput = document.getElementById("address");
+export let addressW = document.getElementsByClassName("alert")[2];
+
+export let form = document.getElementById("check");
+export let productInput = document.getElementById("products");
 
 let inputs = document.querySelectorAll("input.data");
 
+document.addEventListener("DOMContentLoaded", async () => {
+  setTimeout(() => {
+    inputs.forEach((e) => {
+      if (e.value != "") {
+        e.previousElementSibling.classList.add("focused");
+        e.value != "" ? e.classList.add("true") : "";
+      }
+    });
+  }, 1);
+});
 inputs.forEach((e) => {
   e.addEventListener("focus", () => {
     e.previousElementSibling.classList.add("focused");
@@ -25,31 +47,18 @@ inputs.forEach((e) => {
   });
 });
 
-export let nameInput = document.getElementById("name");
-export let nameW = document.getElementsByClassName("alert")[0];
-
 nameInput.addEventListener("blur", () => {
   nameCheck();
 });
-
-export let phoneInput = document.getElementById("phone");
-export let phonew = document.getElementsByClassName("alert")[1];
 
 phoneInput.addEventListener("blur", () => {
   phoneCheck();
 });
 
-export let addressInput = document.getElementById("address");
-export let addressW = document.getElementsByClassName("alert")[2];
-
 addressInput.addEventListener("blur", () => {
   textCheck(addressInput, addressW);
   getAdress();
 });
-
-export let form = document.getElementById("check");
-
-export let productInput = document.getElementById("products");
 
 form.addEventListener("submit", (e) => {
   e.preventDefault();

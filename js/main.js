@@ -1,4 +1,5 @@
 import { getDataFromJson, getCategories } from "./all/data.js";
+import { noProducts } from "./all/no-products.js";
 import {
   addToCart,
   handleCounter,
@@ -57,6 +58,7 @@ document.addEventListener("DOMContentLoaded", async () => {
   darkMode();
   navList();
   pronums();
+  noProducts();
 });
 
 document.addEventListener("click", (e) => {
@@ -96,7 +98,6 @@ document.addEventListener("click", (e) => {
 });
 
 // functions
-
 
 function addCategoriesToDraged(categories) {
   const categoriesContainer = dragedList.querySelector(".categories");

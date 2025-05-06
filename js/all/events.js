@@ -49,3 +49,20 @@ export function navList() {
     dragedList.classList.toggle("draged");
   });
 }
+
+export function prosClick(e) {
+  e.addEventListener("click", (e) => {
+    if (
+      e.target.closest(".btns") ||
+      e.target.closest(".counter") ||
+      e.target.closest(".fa-xmark") ||
+      e.target.closest(".del-from-fav")
+    ) {
+      return;
+    }
+    let proCard = e.currentTarget.closest(".added");
+    let proId = proCard.dataset.id;
+    localStorage.setItem("proId", proId);
+    window.open(`product.html`, "_self");
+  });
+}

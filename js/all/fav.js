@@ -1,3 +1,6 @@
+import { noProducts } from "./no-products.js";
+import { prosClick } from "./events.js";
+
 let favList = document.querySelector(".fav-list");
 let favArr = [];
 
@@ -6,7 +9,7 @@ function addToFavOnClick(data) {
   addToFavBtn.forEach((e) => {
     e.addEventListener("click", (e) => {
       let favDiv = e.target.closest(".add-to-fav");
-      let proCard = favDiv.closest(".swiper-slide");
+      let proCard = favDiv.closest(".added");
       if (!favDiv.classList.contains("faved")) {
         addToFav(proCard.id, data);
         addfavToLocal(proCard.id);
@@ -22,9 +25,9 @@ function addToFavOnClick(data) {
 
 function addToFav(ref, data) {
   const favItem = document.createElement("div");
-  favItem.className = "fav listed";
+  favItem.className = "fav listed added";
   favItem.dataset.id = data[ref].id;
-
+  prosClick(favItem);
   const img = document.createElement("img");
   img.src = data[ref].img;
   img.loading = "lazy";
@@ -49,6 +52,7 @@ function addToFav(ref, data) {
   del.addEventListener("click", () => {
     delFromFav(del.closest(".listed").dataset.id);
   });
+  noProducts();
 }
 
 function addfavToLocal(e) {
@@ -64,12 +68,13 @@ function favCheck() {
   addToFavBtn.forEach((e) => {
     if (localStorage.favedData) {
       [...JSON.parse(localStorage.favedData)].forEach((a) => {
-        if (e.closest(".swiper-slide").id == a) {
+        if (e.closest(".added").id == a) {
           e.classList.add("faved");
         }
       });
     }
   });
+  noProducts();
 }
 
 function delFromFav(e) {
@@ -92,6 +97,7 @@ function delFromFav(e) {
 
   localStorage.favedData = JSON.stringify(arr);
   favCoun();
+  noProducts();
 }
 
 function favCoun() {
