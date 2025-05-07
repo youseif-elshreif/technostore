@@ -19,7 +19,7 @@ export function darkMode() {
   });
 }
 
-export let cart = document.querySelector(".fa-cart-shopping");
+export let cart = document.querySelector(".nav .fa-cart-shopping");
 export let cartList = document.querySelector(".cart-list");
 export function cartOpen() {
   if (cart) {
@@ -29,7 +29,17 @@ export function cartOpen() {
   }
 }
 
-export let fav = document.querySelector(".fa-heart");
+export let search = document.querySelector(".nav .fa-magnifying-glass");
+export let searchList = document.querySelector(".search-list");
+export function searchOpen() {
+  if (search) {
+    search.addEventListener("click", () => {
+      searchList.classList.toggle("open");
+    });
+  }
+}
+
+export let fav = document.querySelector(".nav  .fa-heart");
 export let favList = document.querySelector(".fav-list");
 export function favOpen() {
   fav.addEventListener("click", () => {

@@ -8,6 +8,7 @@ import {
   countPrice,
 } from "./all/cart.js";
 import { addToFavOnClick, addToFav } from "./all/fav.js";
+import { searchFilter } from "./all/search.js";
 import {
   darkBtn,
   backImage,
@@ -22,6 +23,9 @@ import {
   dragedList,
   bars,
   navList,
+  searchOpen,
+  search,
+  searchList,
 } from "./all/events.js";
 
 let globalCategories = [];
@@ -59,6 +63,8 @@ document.addEventListener("DOMContentLoaded", async () => {
   navList();
   pronums();
   noProducts();
+  searchFilter(data);
+  searchOpen();
 });
 
 document.addEventListener("click", (e) => {
@@ -81,9 +87,20 @@ document.addEventListener("click", (e) => {
     if (
       !cartList.contains(e.target) &&
       e.target !== cart &&
-      e.target !== darkBtn
+      e.target !== darkBtn &&
+      !e.target.classList.contains("fa-xmark")
     ) {
       cartList.classList.remove("open");
+    }
+  }
+
+  if (searchList) {
+    if (
+      !searchList.contains(e.target) &&
+      e.target !== search &&
+      e.target !== darkBtn
+    ) {
+      searchList.classList.remove("open");
     }
   }
 
@@ -106,7 +123,7 @@ function addCategoriesToDraged(categories) {
     const li = document.createElement("li");
     const a = document.createElement("a");
 
-    a.href = `#${e}`;
+    a.href = `index.html#${e}`;
     a.textContent = e;
 
     li.appendChild(a);

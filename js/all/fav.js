@@ -63,7 +63,7 @@ function addfavToLocal(e) {
   localStorage.favedData = JSON.stringify([...new Set(favArr)]);
 }
 
-function favCheck() {
+export function favCheck() {
   let addToFavBtn = document.querySelectorAll(".add-to-fav");
   addToFavBtn.forEach((e) => {
     if (localStorage.favedData) {
@@ -78,18 +78,17 @@ function favCheck() {
 }
 
 function delFromFav(e) {
-  let faved = Array.from(document.querySelectorAll(".fav.listed"));
-  let favedCard = Array.from(document.querySelectorAll(".swiper-slide.added"));
+  let favedCard = Array.from(document.querySelectorAll(`[data-id="${e}"]`));
 
-  let index = faved.findIndex((a) => a.dataset.id == e);
-  let index2 = favedCard.findIndex((a) => a.id == e);
+  let index = favedCard.findIndex((a) => a.dataset.id == e);
 
   if (index != -1) {
-    faved[index].remove();
-  }
-
-  if (index2 != -1) {
-    favedCard[index2].querySelector(".faved").classList.remove("faved");
+    favedCard.forEach((a) => {
+      a.querySelector(".faved")?.classList.remove("faved");
+      if (a.closest(".fav-list.darged-list")) {
+        a.remove();
+      }
+    });
   }
 
   let arr = JSON.parse(localStorage.favedData);

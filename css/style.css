@@ -205,6 +205,7 @@ input:-webkit-autofill {
 }
 
 .darged-list .listed img {
+  max-width: 100px;
   height: 80px;
   margin: auto;
 }
@@ -242,6 +243,23 @@ input:-webkit-autofill {
   color: var(--red-btn);
   font-weight: 500;
 }
+
+.c-input {
+  position: relative;
+  width: 100%;
+  padding: 5px;
+  height: 40px;
+  border-radius: 10px;
+  border: 3px solid var(--sec-logo-color);
+  background-color: var(--sec-bgcolor);
+  color: var(--main-logo-color);
+  font-family: var(--Poppinsin-font);
+}
+
+.c-input:focus {
+  border-width: 5px;
+}
+
 /*end-components */
 
 /* start-cart-list */
@@ -346,6 +364,47 @@ input:-webkit-autofill {
 }
 
 /* end-fav-list */
+/* start-search-list  */
+
+.search-list input {
+  margin-bottom: 20px;
+}
+
+.search-list .added {
+  border-radius: 5px;
+  border: 3px solid var(--btn);
+  padding: 15px;
+  color: var(--main-logo-color);
+  font-family: var(--Roboto-font);
+  cursor: pointer;
+  margin-right: 10px;
+}
+
+.search-list .added:not(:last-child) {
+  margin-bottom: 20px;
+}
+
+.search-products {
+  overflow-y: scroll;
+  height: calc(100% - 100px);
+}
+
+.search-list img {
+  margin: 0 auto 10px;
+  height: 100px;
+  display: block;
+}
+
+.search-list h4 {
+  margin-bottom: 10px;
+}
+
+.search-list .price {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+/* end-search-list  */
 /* start-nav */
 
 .nav {
@@ -1332,19 +1391,6 @@ form input[type="submit"] {
   border: none;
 }
 
-form input,
-textarea {
-  position: relative;
-  width: 100%;
-  padding: 5px;
-  height: 40px;
-  border-radius: 10px;
-  border: 3px solid var(--sec-logo-color);
-  background-color: var(--sec-bgcolor);
-  color: var(--main-logo-color);
-  font-family: var(--Poppinsin-font);
-}
-
 form div {
   position: relative;
 }
@@ -1367,9 +1413,6 @@ form label {
 input.true:not(:last-child) {
   margin-left: 20% !important;
   width: 80% !important;
-}
-input.focuse {
-  border-width: 5px;
 }
 
 label.focused {
@@ -1553,6 +1596,7 @@ form .warning {
   border: 1px solid #ccc;
   background-color: var(--header-color);
   background-size: 600px 600px;
+  pointer-events: none;
 }
 
 .products-details .img img {
@@ -1598,4 +1642,25 @@ form .warning {
 .products-details .btns {
   cursor: pointer;
 }
+
+@media (max-width: 992px) {
+  .products-details .pros {
+    flex-direction: column;
+  }
+  .products-details .img {
+    margin: 0 auto;
+    min-width: 100%;
+  }
+
+  .products-details .img p {
+    font-size: 18px;
+  }
+
+  .zoom-box {
+    left: 50%;
+    bottom: 50%;
+    transform: translate(-50%, 10%);
+  }
+}
+
 /* end-product */

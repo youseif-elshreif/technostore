@@ -40,8 +40,6 @@ export function getAdress() {
         const lon = parseFloat(data[0].lon);
         marker.setLatLng([lat, lon]);
         map.setView([lat, lon], 15);
-      } else {
-        alert("العنوان مش واضح، جرّب تكتبه بطريقة تانية");
       }
     });
 }

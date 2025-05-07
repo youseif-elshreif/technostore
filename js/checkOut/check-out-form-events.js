@@ -36,14 +36,12 @@ inputs.forEach((e) => {
   e.addEventListener("focus", () => {
     e.previousElementSibling.classList.add("focused");
     e.classList.add("true");
-    e.classList.add("focuse");
   });
   e.addEventListener("blur", () => {
     if (e.value == "") {
       e.previousElementSibling.classList.remove("focused");
       e.classList.remove("true");
     }
-    e.classList.remove("focuse");
   });
 });
 

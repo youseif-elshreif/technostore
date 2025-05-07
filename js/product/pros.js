@@ -15,15 +15,23 @@ const zoomBox = imgContainer.querySelector(".zoom-box");
 img.addEventListener("mousemove", function (e) {
   zoomBox.style.display = "block";
 
-  //   const rect = img.getBoundingClientRect();
-  //   const x = e.clientX - rect.left;
-  //   const y = e.clientY - rect.top;
+  const rect = img.getBoundingClientRect();
+  console.log(rect);
+  console.log(rect.left, rect.top);
+  const x = e.clientX - rect.left;
+  console.log("x", x);
+  const y = e.clientY - rect.top;
+  console.log("y", y);
 
-  //   const percentX = (x / img.offsetWidth) * 100;
-  //   const percentY = (y / img.offsetHeight) * 100;
+  const percentX = (x / img.offsetWidth) * 100;
+  console.log(percentX);
+  console.log("offsetWidth", img.offsetWidth);
+  const percentY = (y / img.offsetHeight) * 100;
+  console.log(percentY);
+  console.log(img.offsetHeight);
 
-  //   zoomBox.style.backgroundImage = `url(${img.src})`;
-  //   zoomBox.style.backgroundPosition = `${percentX}% ${percentY}%`;
+  zoomBox.style.backgroundImage = `url(${img.src})`;
+  zoomBox.style.backgroundPosition = `${percentX}% ${percentY}%`;
 });
 
 img.addEventListener("mouseleave", function () {
@@ -33,6 +41,7 @@ img.addEventListener("mouseleave", function () {
 function addPro(data) {
   let container = document.querySelector(".container.added");
   container.id = localStorage.getItem("proId");
+  container.dataset.id = localStorage.getItem("proId");
 
   let pro = document.querySelector(".pros");
   pro.id = container.id;

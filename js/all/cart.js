@@ -140,29 +140,24 @@ function pronums() {
 function handleCounter(target, type) {
   let card = target.closest(".added");
   let dataId = card?.dataset.id || target.closest(".added")?.id;
-  let swiperCard = document.getElementById(`${dataId}`)?.querySelector(".num");
-  let cartCard = document
-    .querySelector(`[data-id="${dataId}"]`)
-    ?.querySelector(".num");
+  let cartCard = [...document.querySelectorAll(`[data-id="${dataId}"]`)];
 
-  if (type === "plus") {
-    ++cartCard.innerHTML;
-    if (swiperCard) {
-      ++swiperCard.innerHTML;
-    }
-  } else if (type === "minus") {
-    if (swiperCard?.innerHTML > 1 || cartCard?.innerHTML > 1) {
-      --cartCard.innerHTML;
-      if (swiperCard) {
-        --swiperCard.innerHTML;
+  cartCard.forEach((e) => {
+    if (type === "plus" && e.querySelector(".num")) {
+      ++e.querySelector(".num").innerHTML;
+    } else if (type === "minus") {
+      if (e.querySelector(".num")?.innerHTML > 1) {
+        --e.querySelector(".num").innerHTML;
+      } else if (e.querySelector(".num")?.innerHTML == 1) {
+        delFromCart(dataId);
       }
-    } else {
-      delFromCart(dataId);
     }
-  }
-  if (swiperCard?.innerHTML > 1 || cartCard?.innerHTML > 1) {
-    addProductCountToLocaol(dataId, card);
-  }
+
+    if (e.querySelector(".num")?.innerHTML > 1) {
+      addProductCountToLocaol(dataId, card);
+    }
+  });
+
   countPopUpCart();
   countPrice();
   noProducts();
@@ -186,13 +181,18 @@ function countPopUpCart() {
 }
 
 function delFromCart(e) {
-  let cartedCard = Array.from(document.querySelectorAll(".carted-card"));
+  let cartedCard = Array.from(document.querySelectorAll(`[data-id="${e}"]`));
 
   let index2 = cartedCard.findIndex((a) => a.id == e);
 
   if (index2 != -1) {
-    cartedCard[index2].querySelector(".add-to-cart").classList.remove("carted");
-    cartedCard[index2].querySelector(".num").innerHTML = 1;
+    cartedCard.forEach((a) => {
+      a.querySelector(".add-to-cart")?.classList.remove("carted");
+      a.querySelector(".num") ? (a.querySelector(".num").innerHTML = 1) : "";
+      if (a.closest(".cart-list.darged-list")) {
+        a.remove();
+      }
+    });
   }
 
   let arr = JSON.parse(localStorage.cartedData || "[]");
