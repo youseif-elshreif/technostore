@@ -6,7 +6,7 @@ function scrollEvent() {
   let bottomValue = computedStyle.getPropertyValue("bottom");
   window.onscroll = () => {
     let value = scrollY;
-    backImage.style.left = parseInt(leftValue) - value * 0.6 + "px";
+    backImage.style.left = parseInt(leftValue) - value * 0.4 + "px";
     backImage.style.bottom = parseInt(bottomValue) - value * 0.4 + "px";
   };
 }
