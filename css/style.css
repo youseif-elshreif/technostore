@@ -620,6 +620,9 @@ input:-webkit-autofill {
   }
 }
 @media (max-width: 992px) {
+  .nav {
+  padding: 20px 0;
+  }
   .nav li a {
     font-size: 14px;
   }
